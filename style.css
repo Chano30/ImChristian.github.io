@@ -79,23 +79,6 @@
 
 /* For Mobile Portrait View */
 
-@media screen and (min-width: 466px)
-    and (orientation: portrait) { 
-    .header{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .header ul {
-        display: inline-flex;
-    }
-    .header ul li{
-        padding: 0 10px;
-    }
-
-}
 
 /* ----END OF NAVIGATION---- */
 
@@ -640,679 +623,320 @@ form .textarea_field textarea{
 
 /* FOR RESPONSIVE */
 
-@media (max-width: 1825px) {
-    .service{
-        gap: 20px;
-        font-size: 70%;
-    }
-}
 
-@media (max-width: 1690px){
-
+/* iPads (portrait and landscape) ----------- */
+@media only screen  and (min-width : 1224px) {
     section{
-        padding: 10rem 2% .3rem;
-    }
-}
-
-@media (max-width: 1436px){
+        padding: 10rem 15% 10rem;
+    }    
     
-    section{
-        padding: 10rem 1% .2rem;
-    }
-    .header nav ul li a{
-        font-size: 100%;
-    }
 
-    .profile{
-        left: -150px;
+    .home_section{
+        margin: 0 -7rem ;
     }
 
     .home_box{
-        left: -100px;
+        top: 10rem;
+    }
+    .icons{
+        margin-bottom: 10rem;
     }
 
-    .btn .button{
-
-        left: 10px;
-    }
-
-    .icons a{
-        bottom: 80px;
-        right: 20px;
-    }
- 
-    
     .box_about_me{
-        padding: 0 200px
+        right: 30rem;
     }
-
-}
-
-@media (max-width: 1250px){
-    .project_section h1{
-        font-size: 3.2rem;
-    }
-
-    section{
-        padding: 5rem 5% -5rem;
-    }
-
-    .description{
-        right: 30px;
-        width: 650px;
-    }
-
-    .profile{
-        right: 100px;
-    }
-
-    .home_box{
-        left: -80px;
-
-    }
-
-}
-
-@media (max-width: 1220px){
-    .profile {
-        top: -20px;
-    }
-    .profile img{
-        width: 450px;
-    }
-
-    .home_box h1{
-        font-size: 3rem;
-        letter-spacing: 1px;
-    }
-
-    .home_box span{
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
-
-    .qote .italic i{
-        font-size: 2.5rem;
-    }
-    .horizontal_line{
-        width: 30px;
-    }
-
-    .btn .button{
+    .text_area p{
+        width: 40rem;
         font-size: 1rem;
     }
-
-    .icons a{
-        width: 30px;
-        height: 30px;
+    .service{
+        right: 20rem;
     }
-}
-
-@media (max-width: 1140px){
-
-    .profile{
-        top: -20px;
-    }
-    .btn .button{
-        left: -5px;
+    .frontend_box,
+    .backend_box{
+        margin: 0 2rem;
     }
 
-    .icons a{
-        bottom: 80px;
-        right: 50px;
+    .project_body{
+        padding: 5rem 4% 1rem;
     }
 
-    .box_about_me{
-        padding: 0 100px
-    }
-
-    .project_section h1{
-        font-size: 3.2rem;
-    }
-    .description h2{
-        font-size: 1.6rem;
-    }
-
-    .description p{
-        font-size: .9rem;
-    }
-
-    .description ol li{
-        font-size: .9rem;
+    .prject_area{
+        padding: 1rem 20rem 1rem;
     }
 
     .description{
-        right: 10px;
-        width: 650px;
+        width: 30rem;
+        margin-left: 10rem;
+    }
+    .description ol{
+        width: 40rem;
+        position: relative;
+        left: -2rem;
+        
     }
 
-    .img_area{
-        left: 20px;
+    .img_area img{
+        position: relative;
+        right: 5rem;
     }
+
+
+    .title{
+        left: 23rem;
+    }
+
+
+
 }
 
-@media (max-width: 1058px){
 
-    .profile{
-        top: -20px;
-    }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    
     .profile img{
-        width: 400px;
+        width: 300px;
+    }
+    .profile{
+        top: -1em;
+        left: -14.5em;
+    }
+
+    .home_box{
+        top: 15rem;
+        right:-1rem;
     }
 
     .home_box h1{
-        font-size: 2.5rem;
-        letter-spacing: 1px;
+        width: 25rem;
+        font-size: 2rem;
     }
-
     .home_box span{
+        position: relative;
+        left: 4rem;
         font-size: 1.5rem;
-        letter-spacing: 1px;
+    }
+    .qote{
+        left: 2rem;
     }
 
     .qote .italic i{
-        font-size: 2rem;
+        width: 1rem;
+        font-size:2.5rem ;
     }
     .horizontal_line{
-        width: 20px;
+        width: 1.5rem;
     }
-
     .btn{
-        right: 50px;
-    }
-
-    .btn .button{
-        font-size: .8rem;
+        right: 2rem;
     }
 
     .icons{
-        right: 40px;
+        right: 1.5rem;
     }
 
-    .icons a{
-        width: 30px;
-        height: 30px;
-    }
-}
-
-
-@media (max-width: 1024px){
-    .profile{
-        left: -100px;
-        top: -50px;
-    }
-
-    .profile img{
-        width: 350px;
-    }
-
-    .home_box{
-        left: -50px;
-    }
-
-    .second_profile img{
-        width: 300px;
-    }
-
-    .second_profile{
-        width: 300px;
-    }
-
-    .service{
-        bottom: -10px;
-        left: -150px;
-    }
-
-
-}
-
-
-@media (max-width: 930px){
-
-    .profile img{
-        width: 300px;
-
-    }
-
-    .home_box{
-        left: -100px;
-    }
-    .icons a{
-        bottom: 80px;
-        right: 20px;
-    }
-
-}
-
-@media (max-width: 901px){
-    .profile{
-    left: -300px;
-    top: -100px;
-    }
-
-    .home_box{
-        left: 100px;
-        top: 200px;
-    }
-
-    .home_box span{
+    .text_area{
         position: relative;
-        left: 100px;
-    }
-
-    .qote{
-        position: relative;
-        left: 100px;
-    }
-
-    .btn {
-        left: 50px;
-    }
-    .icons a{
-        bottom: 80px;
-        left: 50px;
-    }
-
-    .second_profile{
-        position: relative;
-        width: 100px;
-        left: 200px;
-        transition: .7s;
+        right: 30rem;
     }
     .text_area h1{
         position: relative;
-        left: 150px;
+        left: 2rem;
     }
-
-    .second_profile img{
-        left: 250px;
-        opacity: .2;
-    }
-
-    .vertical{
+    .text_area p{
         position: relative;
-        transform: rotate(0deg);
-        top: -180px;
-        left: 46rem;
-        transition: .7s;
+        right: 12em;
+        width: 40rem;
+        font-size: .9rem;
     }
 
-    .service{
-        font-size: 80%;
+    .second_profile{
+        position: relative;
+        right: 8em;
+    }
+    .second_profile img{
+        opacity: .5;
     }
 
     .frontend_box,
     .backend_box{
         position: relative;
-        left: 227px;
-    }
-    .project_section{
-        gap: 50px;
-    }
-
-    .prject_area{
-        top: -10px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
+        top: 5rem;
+        left: 1.5em;
+        width: 20rem;
+        margin: 0 2rem;
     }
 
+    .vertical{
+        position: relative;
+        top: -7rem;
+        left: 34rem;
+        transform: rotate(0deg);
+        letter-spacing: 3px;
+    }
+    .project_section h1{
+        font-size: 2.5rem;
+    }
+
+    .description h3, .description h2{
+        font-size: 2rem;
+        font-weight: 300;
+        left: 26rem;
+        bottom: 4.5em;
+    }
+    .description p{
+        position: relative;
+        left: 27rem;
+        font-size: 1rem;
+        width: 40rem;
+        bottom: 9em;
+    }
+    .description ol li{
+        width: 20rem;
+        font-size: 1rem;
+        column-gap: 500px;
+    }
+
+    .description ol{
+        position: relative;
+        left: 25rem;
+        bottom: 8rem;
+        width: 50rem;
+    }
     .img_area{
-        left: 70px;
+        position: relative;
+        left: -21rem;
+        top: 16rem;
+    }
+    .img_area img{
+        width: 40rem;
     }
 
     .title{
-        left: 28%;
+        font-size: 3rem;
+        left: 9rem;
     }
-
     .btns{
-        left: 300px;
+        left: 9rem;
     }
 
-    .text_area{
-        position: relative;
-        left: 100px;
-    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
-
-}
-
-@media (max-width: 876px){
-    .profile{
-        top: 100px;
-    }
-    .home_box{
-        top: 350px;
-        left: 70px;
-    }
-}
-
-
-@media (max-width: 769px){
-
-    .profile{
-        left: -230px;
-        top: -30px;
-    }
-    .home_box{
-        top: 300px;
-        left: 40px;
-    }
-
-    .icons{
-        right: 30px;
-    }
-
-    .home_box span,
-    .qote {
-        position: relative;
-        left: 90px;
-    }
-
-    .box_about_me{
-        top: -40px;
-        right: 90px;
-    }
-
-    .service{
-        position: relative;
-        font-size: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        bottom: 30px;
-        right: 0;
-        left: 0;
-    }
-
-    .vertical{
-        position: absolute;
-        left: 0;
-        right: 0;
-        transform: rotate(-90deg);
-        top: 250px;
-    }
-
-    .backend_box{
-        position: relative;
-        left: 200px;
-    }
-    .frontend_box{
-        position: relative;
-        left: 0;
-        right: 250px;
-    }
-
-    .btns{
-        left: 230px;
-    }
-
-    .title{
-        left: 170px;
-    }
-}
-
-@media (max-width: 728px){
-
-    .profile{
-        top: 100px;
-    }
-
-    .home_box{
-        top: 400px;
-        left: 10px;
-    }
-
-}
-
-@media (max-width: 698px){
-    .profile{
-        top: 200px;
-        left: -200px;
-    }
-
-
-    .text_area{
-        position: relative;
-        left: -20px;
-    }
-
-    .vertical{
-        left: -50px;
-    }
-
-    .btns{
-        left: 200px;
-    }
-}
-@media (max-width: 681px ){
-    .profile{
-        top: 100px;
-    }
-    .home_box{
-        left: 10px;
-        top: 350px;
-    }
-    .home_box h1{
-        width: 350px;
-        font-size: 2rem;
-    }
-
-    .home_box span{
-        left: 50px;
-    }
-
-    .qote{
-        left: 30px;
-    }
-
-    .btn {
-        left: 0;
-    }
-    .icons{
-        left: -80px;
-    }
+    section{
+        padding: 10rem 25% 10rem;
+    }    
     
-    .btns{
-        left: 190px;
-    }
-    
-}
-
-@media (max-width: 631px ){
-    .profile{
-        top: 100px;
-    }
-    .home_box{
-        left: 10px;
-        top: 350px;
-    }
-
-    .home_box h1{
-        width: 350px;
-        font-size: 2rem;
-    }
-
-    .home_box span{
-        left: 50px;
-    }
-
-    .qote{
-        left: 30px;
-    }
-
-    .btn {
-        left: 0;
-    }
-
-    .icons{
-        left: -80px;
-    }
-
-    .text_area{
-        position: relative;
-        left: -50px;
-    }
-
-    .text_area h1{
-        left: 150px;
-    }
-
-    .description p{
-        left: 110px;
-        width: 450px;
-    }
-
-    .title{
-        left: 100px;
-    }
-
-    .btns{
-        left: 160px;
-    }
-
-    .footer{
-        left: 100px;
-    }
-}
-
-@media (max-width: 609px){
-    .profile{
-        top: 100px;
-    }
-    .home_box{
-        left: 10px;
-        top: 350px;
-    }
-
-    .home_box h1{
-        width: 350px;
-        font-size: 2rem;
-    }
-
-    .home_box span{
-        left: 50px;
-    }
-
-    .qote{
-        left: 30px;
-    }
-
-    .btn {
-        left: 0;
-    }
-
-    .icons{
-        left: -80px;
-    }
-
-    .text_area{
-        position: relative;
-        left: -50px;
-    }
-
-    .text_area h1{
-        left: 150px;
-    }
-
-    .description p{
-        left: 110px;
-        width: 450px;
-    }
-
-    .title{
-        left: 100px;
-    }
-
-    .btns{
-        left: 160px;
-    }
-
-    .footer{
-        left: 100px;
-    }
-}
-
-
-@media (max-width: 480px){
     .header{
         width: 100%;
         display: flex;
         flex-direction: column;
-
     }
-
+    .profile img{
+        width: 250px;
+    }
     .header ul {
         display: inline-flex;
     }
     .header ul li{
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
-    .footer{
-        width: 350px;
-        left: 10px;
-    }
     .profile{
-        left: -270px;
-        top: -100px;
+        top: -4em;
+        left: -21em;
     }
 
     .home_box{
-        left: -60px;
-        top: 200px;
+        top: 8rem;
+        right: 9rem;
     }
 
     .home_box h1{
-        width: 350px;
-        font-size: 2rem;
+        width: 20rem;
+        font-size: 1.5rem;
     }
 
     .home_box span{
-        left: 50px;
+        position: relative;
+        left: 2rem;
+        font-size: 1.3rem;
     }
 
-    .qote{
-        left: 30px;
+    .qote .italic i{
+        width: 1rem;
+        font-size:2.5rem ;
+    }
+    .horizontal_line{
+        width: 1.5rem;
     }
 
     .btn {
-        left: 1px;
+        right: 4rem;
     }
 
     .icons{
-        left: -80px;
-    }
-
-    .box_about_me{
-        right: 200px;
-        
+        top: 4rem;
+        right: 3.5rem;
     }
     .text_area{
         position: relative;
-        bottom: 50px;
+        right: 43rem;
+
     }
+    .text_area p{
+        position: relative;
+        width: 20rem;
+        left: 2rem;
+    }
+
     .text_area h1{
+        position: relative;
         font-size: 2rem;
-        bottom: -50px;
+        top: 2rem;
+        left: 6rem;
         width: 170px;
     }
 
-    .text_area p{
-        width: 460px;
-        font-size: .7rem;
+    .second_profile{
+        position: relative;
+        top: 10rem;
+        right: 18em;
+    }
+    .second_profile img{
+        width: 20em;
+        opacity: .4;
+        position: relative;
+        bottom:10rem ;
     }
 
- 
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: .7rem;
+    }
     .vertical{
-        font-size: 2rem;
-        letter-spacing: 3px;
-        position: absolute;
-        top: -60px;
+        
         transform: rotate(0deg);
-        left: 150px;
-        width: 180px;
+        font-size: 2rem;
+        left: 9rem;
+        top: -1rem;
+    }
+
+    .frontend_box,
+    .backend_box{
+        position: relative;
+        left: 13.5em;
+        width: 19rem;
+    }
+    .backend_box{   
+        top: 1.5rem;
+        left: 22rem;
     }
 
     .project_section h1{
@@ -1322,13 +946,15 @@ form .textarea_field textarea{
     .description h3, .description h2{
         font-size: 1.5rem;
         font-weight: 300;
+        left: 18rem;
+        bottom: 6em;
     }
-
     .description p{
         position: relative;
-        left: 100px;
+        left: 33rem;
         font-size: .7rem;
-        width: 470px;
+        width: 15rem;
+        bottom: 13em;
     }
     .description ol li{
         width: 180px;
@@ -1337,105 +963,54 @@ form .textarea_field textarea{
     }
 
     .description ol{
+        display: flex;
+        flex-direction: column;
         position: relative;
-        left: 110px;
-        width: 470px;
+        left: 35rem;
+        bottom: 8rem;
+        width: 25rem;
     }
     .img_area{
         position: relative;
-        left: 90px;
+        left: -22rem;
+        top: 16rem;
     }
     .img_area img{
-        width: 470px;
+        width: 25rem;
     }
 
     .title{
-        font-size: 2rem;
-        left: 25%;
+        font-size: 1.5rem;
+        left: 2.5rem;
     }
-
     .btns{
-        left: 100px;
+        left: -2.5rem;
     }
 
-    .footer{
-        left: 50px;
+    .contact_body{
+        padding: 5rem 4% 1rem;
     }
-}
-
-@media (max-width: 478px){
-    .profile{
-        top: 100px;
-    }
-    .home_box{
-        top: 350px;
-    }
-
-    .text_area{
-        left: 0;
-    }
-}
-
-@media (max-width: 390px){
-    .profile{
-        top: -10px;
-        left: -300px;
-    }
-
-    .home_box{
-        top: 200px;
-        left: -100px;
-    }
-
-    .text_area{
-        left: -50px;
-        width: 350px;
-    }
-    .text_area p{
+ 
+    .footer_box{
+        width: 20rem;
         position: relative;
-        left: 65px;
-        width: 350px;
-    }
-    .vertical{
-        left: 100px;
+        bottom: 7rem;
+        right: 12rem;
     }
 
-    .backend_box{
-        width: 375px;
-        padding: 0 -100px;
+    .footer_box h2{
+        font-size: 1rem;
     }
 
-    .project_section h1{
-        letter-spacing: 1px;
-    }
-    .description p{
-        left: 150px;
-        width: 360px;
+    .footer_box p{
+        font-size: .7rem;
     }
 
-    .description ol{
-        left: 150px;
-        width: 370px;
-    }
 
-    .img_area img{
+}
 
-        width: 350px;
-    }
-    
-    .img_area{
-        left: 150px;
-    }
-
-    .btns{
-        left: 60px;
-    }
-
-    .second_profile{
-        top: -20px;
-        left: 150px;
-    }
-
+@media screen and (min-width: 466px)
+    and (orientation: portrait) { 
     .header{
         width: 100%;
         display: flex;
@@ -1450,8 +1025,4 @@ form .textarea_field textarea{
         padding: 0 10px;
     }
 
-    .footer{
-        width: 350px;
-        left: 10px;
-    }
 }
