@@ -1140,3 +1140,76 @@ form .textarea_field textarea{
         left: 50px;
     }
 }
+
+@media (max-width: 390px){
+    .profile{
+        left: -300px;
+    }
+
+    .home_box{
+        left: -100px;
+    }
+
+    .text_area{
+        left: -50px;
+        width: 350px;
+    }
+    .text_area p{
+        position: relative;
+        left: 65px;
+        width: 350px;
+    }
+    .vertical{
+        left: 100px;
+    }
+
+    .backend_box{
+        width: 375px;
+        padding: 0 -100px;
+    }
+
+    .project_section h1{
+        letter-spacing: 1px;
+    }
+    .description p{
+        left: 150px;
+        width: 360px;
+    }
+
+    .description ol{
+        left: 150px;
+        width: 370px;
+    }
+
+    .img_area img{
+
+        width: 350px;
+    }
+    
+    .img_area{
+        left: 150px;
+    }
+
+    .btns{
+        left: 60px;
+    }
+
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .header ul {
+        display: inline-flex;
+    }
+    .header ul li{
+        padding: 0 10px;
+    }
+
+    .footer{
+        width: 350px;
+        left: 10px;
+    }
+}
