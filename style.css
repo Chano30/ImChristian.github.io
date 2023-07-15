@@ -683,9 +683,12 @@ form .textarea_field textarea{
 
 
     .title{
-        left: 23rem;
+        left: 18rem;
     }
 
+    .btns{
+        left: 18rem;
+    }
 
 
 }
@@ -827,7 +830,7 @@ form .textarea_field textarea{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
     section{
-        padding: 10rem 25% 10rem;
+        padding: 10rem 20% 10rem;
     }    
     
     .header{
@@ -884,7 +887,7 @@ form .textarea_field textarea{
     }
     .text_area{
         position: relative;
-        right: 43rem;
+        right: 40rem;
 
     }
     .text_area p{
@@ -981,10 +984,10 @@ form .textarea_field textarea{
 
     .title{
         font-size: 1.5rem;
-        left: 2.5rem;
+        left: 6rem;
     }
     .btns{
-        left: -2.5rem;
+        left: 1.5rem;
     }
 
     .contact_body{
