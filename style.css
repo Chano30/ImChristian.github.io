@@ -79,7 +79,7 @@
 
 /* For Mobile Portrait View */
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: 466px)
     and (orientation: portrait) { 
     .header{
         width: 100%;
@@ -1031,7 +1031,7 @@ form .textarea_field textarea{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 466px){
     .profile{
         left: -270px;
         top: -100px;
@@ -1078,7 +1078,7 @@ form .textarea_field textarea{
     }
 
     .text_area p{
-        width: 470px;
+        width: 460px;
         font-size: .7rem;
     }
 
