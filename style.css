@@ -1378,10 +1378,12 @@ form .textarea_field textarea{
 
 @media (max-width: 390px){
     .profile{
+        top: -10px;
         left: -300px;
     }
 
     .home_box{
+        top: 200px;
         left: -100px;
     }
 
