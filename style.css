@@ -107,7 +107,6 @@ section{
     position: relative;
     margin-top: 100px;
     color: wheat;
-
     font-size: 1.5rem;
 }
 
@@ -627,7 +626,7 @@ form .textarea_field textarea{
 /* iPads (portrait and landscape) ----------- */
 @media only screen  and (min-width : 1224px) {
     section{
-        padding: 10rem 15% 10rem;
+        padding: 10rem 25% 10rem;
     }    
     
 
@@ -646,7 +645,7 @@ form .textarea_field textarea{
         right: 30rem;
     }
     .text_area p{
-        width: 40rem;
+        width: 45rem;
         font-size: 1rem;
     }
     .service{
@@ -683,11 +682,11 @@ form .textarea_field textarea{
 
 
     .title{
-        left: 18rem;
+        left: 25rem;
     }
 
     .btns{
-        left: 18rem;
+        left: 25rem;
     }
 
 
@@ -984,10 +983,10 @@ form .textarea_field textarea{
 
     .title{
         font-size: 1.5rem;
-        left: 6rem;
+        left: 8rem;
     }
     .btns{
-        left: 1.5rem;
+        left: 2rem;
     }
 
     .contact_body{
