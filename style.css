@@ -102,7 +102,7 @@
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 /* ---HOME SECTION---- */
 
@@ -124,8 +124,7 @@ section{
     position: relative;
     margin-top: 100px;
     color: wheat;
-    width: 800px;
-    height: 350px;
+
     font-size: 1.5rem;
 }
 
@@ -294,6 +293,7 @@ section{
     align-items: center;
     padding: 0 400px;
     bottom: 80px;
+    right: 140px;
 }
 
 
@@ -327,7 +327,7 @@ section{
     justify-content: space-around;
     align-items: center;
     bottom: 50px;
-    right: 100px;
+    right: 150px;
 }
 
 .vertical{
@@ -448,6 +448,7 @@ section{
     background-image: url("./images/project-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .project_section{
@@ -533,6 +534,7 @@ section{
     background-size: cover;
     min-width: auto;
     padding-bottom: 7rem;
+    
 }
 
 
@@ -548,12 +550,14 @@ form .input_box{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 form .input_box .input_text{
     position: relative;
     width: 49%;
     margin: .8rem 0;
+    
 }
 
 form .input_box .input_text input,
@@ -566,6 +570,7 @@ form .textarea_field textarea{
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid #C62368;
+    
 }
 
 form .input_box .input_text input::placeholder,
@@ -577,6 +582,7 @@ form .textarea_field{
     position: relative;
     margin: .8rem 0 2.7rem;
     display: flex;
+    
 }
 
 form .textarea_field textarea{
@@ -878,7 +884,7 @@ form .textarea_field textarea{
 
 }
 
-@media (max-width: 911px){
+@media (max-width: 901px){
     .profile{
     left: -300px;
     top: -100px;
@@ -927,7 +933,7 @@ form .textarea_field textarea{
         position: relative;
         transform: rotate(0deg);
         top: -180px;
-        left: 48rem;
+        left: 46rem;
         transition: .7s;
     }
 
@@ -963,10 +969,26 @@ form .textarea_field textarea{
         left: 300px;
     }
 
+    .text_area{
+        position: relative;
+        left: 100px;
+    }
+    
+
+}
+
+@media (max-width: 876px){
+    .profile{
+        top: 100px;
+    }
+    .home_box{
+        top: 350px;
+        left: 70px;
+    }
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 769px){
 
     .profile{
         left: -230px;
@@ -1031,7 +1053,207 @@ form .textarea_field textarea{
     }
 }
 
-@media (max-width: 466px){
+@media (max-width: 728px){
+
+    .profile{
+        top: 100px;
+    }
+
+    .home_box{
+        top: 400px;
+        left: 10px;
+    }
+
+}
+
+@media (max-width: 698px){
+    .profile{
+        top: 200px;
+        left: -200px;
+    }
+
+
+    .text_area{
+        position: relative;
+        left: -20px;
+    }
+
+    .vertical{
+        left: -50px;
+    }
+
+    .btns{
+        left: 200px;
+    }
+}
+@media (max-width: 681px ){
+    .profile{
+        top: 100px;
+    }
+    .home_box{
+        left: 10px;
+        top: 350px;
+    }
+    .home_box h1{
+        width: 350px;
+        font-size: 2rem;
+    }
+
+    .home_box span{
+        left: 50px;
+    }
+
+    .qote{
+        left: 30px;
+    }
+
+    .btn {
+        left: 0;
+    }
+    .icons{
+        left: -80px;
+    }
+    
+    .btns{
+        left: 190px;
+    }
+    
+}
+
+@media (max-width: 631px ){
+    .profile{
+        top: 100px;
+    }
+    .home_box{
+        left: 10px;
+        top: 350px;
+    }
+
+    .home_box h1{
+        width: 350px;
+        font-size: 2rem;
+    }
+
+    .home_box span{
+        left: 50px;
+    }
+
+    .qote{
+        left: 30px;
+    }
+
+    .btn {
+        left: 0;
+    }
+
+    .icons{
+        left: -80px;
+    }
+
+    .text_area{
+        position: relative;
+        left: -50px;
+    }
+
+    .text_area h1{
+        left: 150px;
+    }
+
+    .description p{
+        left: 110px;
+        width: 450px;
+    }
+
+    .title{
+        left: 100px;
+    }
+
+    .btns{
+        left: 160px;
+    }
+
+    .footer{
+        left: 100px;
+    }
+}
+
+@media (max-width: 609px){
+    .profile{
+        top: 100px;
+    }
+    .home_box{
+        left: 10px;
+        top: 350px;
+    }
+
+    .home_box h1{
+        width: 350px;
+        font-size: 2rem;
+    }
+
+    .home_box span{
+        left: 50px;
+    }
+
+    .qote{
+        left: 30px;
+    }
+
+    .btn {
+        left: 0;
+    }
+
+    .icons{
+        left: -80px;
+    }
+
+    .text_area{
+        position: relative;
+        left: -50px;
+    }
+
+    .text_area h1{
+        left: 150px;
+    }
+
+    .description p{
+        left: 110px;
+        width: 450px;
+    }
+
+    .title{
+        left: 100px;
+    }
+
+    .btns{
+        left: 160px;
+    }
+
+    .footer{
+        left: 100px;
+    }
+}
+
+
+@media (max-width: 480px){
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .header ul {
+        display: inline-flex;
+    }
+    .header ul li{
+        padding: 0 10px;
+    }
+
+    .footer{
+        width: 350px;
+        left: 10px;
+    }
     .profile{
         left: -270px;
         top: -100px;
@@ -1141,6 +1363,19 @@ form .textarea_field textarea{
     }
 }
 
+@media (max-width: 478px){
+    .profile{
+        top: 100px;
+    }
+    .home_box{
+        top: 350px;
+    }
+
+    .text_area{
+        left: 0;
+    }
+}
+
 @media (max-width: 390px){
     .profile{
         left: -300px;
@@ -1192,6 +1427,11 @@ form .textarea_field textarea{
 
     .btns{
         left: 60px;
+    }
+
+    .second_profile{
+        top: -20px;
+        left: 150px;
     }
 
     .header{
