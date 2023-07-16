@@ -14,9 +14,6 @@
 }
 
 
-
-
-
 /* ----NAVIGATION------ */
 .header{
     display: flex;
@@ -24,7 +21,7 @@
     align-items: center;
     width: 100%;
     background-color: #002233;
-    padding: 20px 80px;
+    padding:2rem 9%;
     box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.75);
@@ -86,6 +83,7 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
     overflow: hidden;
+    
 }
 /* ---HOME SECTION---- */
 
@@ -93,26 +91,22 @@ section{
     background-image: url("./images/background_image.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
 }
 
 .home_section{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 150px;
-    
-}
-
-.home_box{
-    position: relative;
-    margin-top: 100px;
-    color: wheat;
-    font-size: 1.5rem;
+    justify-content: space-between;
+    gap: 25rem;
 }
 
 .home_box h1{
     font-size: 3.5rem;
     letter-spacing: 3px;
+    color: wheat;
 }
 
 .home_box span{
@@ -124,21 +118,18 @@ section{
 
 .qote {
    display: inline-flex;
-   position: relative;
    gap: 10px;
 }
 
 .horizontal_line{
-    position: absolute;
     width: 40px;
     height: 0;
     border: 2px solid grey;
-    top: 30px;
+    margin-top: 2rem;
+
 }
 .italic{
-    margin-left: 50px;
     color: wheat;
-    
 }   
 
 .italic i {
@@ -147,20 +138,19 @@ section{
     font-family: 'Kolker Brush', cursive;
 }
 
-
-.btn, .icons{
+.btn{
     position: relative;
     display: flex;
-    gap: 30px;
-    margin-left: 100px;
-    bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 5rem;
 }
 
 .btn .button {
     position: relative;
-    padding: 8px;
-    top: 120px;
-    left: 30px;
+    width: 8rem;
+    height: 55%;
     border: 1px solid #C62368;
     border-radius: .6rem;
     font-size: 1.3rem;
@@ -199,8 +189,13 @@ section{
 
 
 .icons{
-    position: relative;
-    top: 140px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+    height: 5rem;
+    margin-left: 12.5rem;
 }
 
 .icons a{
@@ -239,22 +234,15 @@ section{
     background-color: #C62368;
 }
 
+.profile img{
+    width: 40rem;
+}
 
-.profile {
+.profile{
     position: relative;
-    top: 20px;
-    right: 250px;
-    
+    bottom: 4rem;
 }
 
-.profile img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 550px;
-
-}
 
 /* ---END OF HOME--- */
 
@@ -266,6 +254,16 @@ section{
     background-image: url("./images/about_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+.about_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
 }
 
 .box_about_me{
@@ -273,17 +271,18 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 400px;
-    bottom: 80px;
-    right: 140px;
+    width: 60rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 17rem;
+
 }
 
 
 .text_area{
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 900px;
     font-size: .8rem;
 }
 
@@ -298,7 +297,6 @@ section{
 }
 
 .text_area p{
-    width: 500px;
     text-align: center;
     font: 1.3rem;
 }
@@ -306,21 +304,20 @@ section{
 .service{
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    bottom: 50px;
-    right: 150px;
+    column-gap: 3rem;
+    margin-left: 5rem;
 }
 
 .vertical{
     position: relative;
-    left: 320px;
     transform: rotate(-90deg);
     font-size: 2.5rem;
     letter-spacing: 15px;
     border-bottom: 2px solid #C62368;
-    width: 250px;
-    top: 20px;
+    left: 3rem;
+    width: 15rem;
 }
 
 .frontend_box,
@@ -332,14 +329,12 @@ section{
     box-shadow: -1px 10px 5px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 10px 20px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 5px 1px rgba(0,0,0,0.75);
-    left: 250px;
 }
 
 
 
 .box_header{
     position: relative;
-    top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -353,7 +348,6 @@ section{
 .skills{
     position: relative;
     padding: 10px 20px;
-    top: 20px;
 }
 
 .skills .progress
@@ -430,7 +424,10 @@ section{
     background-image: url("./images/project-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 9% 2rem;
 }
 
 .project_section{
@@ -450,46 +447,39 @@ section{
 .prject_area{
     display: inline-flex;
     position: relative;
-    top: 40px;
-
+    column-gap: 7rem;
+    margin-right: 2rem;
 }
 
 .description{
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 700px;
-    right: 100px;
     text-align: center;
+    row-gap: 1rem;
 }
 
 .description h3{
-    position: relative;
-    bottom: 20px;
     font-size: 2.5rem;
     color: #C62368;
     letter-spacing: 2px;
 }
 
 .description p{
-    position: relative;
     letter-spacing: 1px;
     font-size: 1.2rem;
-    bottom: 20px;
 }
 .description h2{
-    position: relative;
     font-size: 2rem;
     color: #C62368;
     letter-spacing: 2px;
-    bottom: 20px;
 }
 
 .description ol{
-    position: relative;
-    left: 60px;
     display: grid;
+    margin-left: 4rem;
     grid-template-columns: 1fr 1fr;
-    
-
 }
 
 .description ol li{
@@ -497,13 +487,8 @@ section{
     width: 250px;
 }
 
-.img_area{
-    position: relative;
-    left: 50px;
-}
-
 .img_area img{
-    width: 500px;
+    width: 50rem;
 }
 
 /* END OF PROJECT SECTION */
@@ -514,9 +499,6 @@ section{
     background-image: url("./images/about_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: auto;
-    padding-bottom: 7rem;
-    
 }
 
 
@@ -573,9 +555,8 @@ form .textarea_field textarea{
 
 .btns{
     position: relative;
-    left: 380px;
-    bottom: 150px;
-    
+    margin-left: 17rem;
+    bottom: 2rem;
 }
 .btns:hover{
     background: transparent;
@@ -598,8 +579,6 @@ form .textarea_field textarea{
     font-weight: 300;
     letter-spacing: 1px;
     color: wheat;
-    top: 90px;
-    left: 200px;
     width: 400px;
 }
 
@@ -622,9 +601,288 @@ form .textarea_field textarea{
 
 /* FOR RESPONSIVE */
 
+@media (max-width:1629px){
+    html{
+        font-size: 88%;
+    }
+
+    section{
+        padding: 10rem 2% 2rem;
+    }
+
+    .home_body{
+        padding: 0 9%;
+    }
+
+    .about_section{
+        row-gap: 12rem;
+    }
+
+    .footer{
+        padding: 2rem 4%;
+    }
+}
+
+@media screen and (max-width:1628px) and (min-width:1402px){
+
+    .home_body{
+        padding: 0 5%;
+    }
+
+    .prject_area{
+        column-gap: 5rem;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .img_area img{
+        width: 40rem;
+    }
+
+}
+
+@media screen and (max-width:1401px) and (min-width:1200px){
+    
+
+    .description{
+        width: 100%;
+    }
+
+    .img_area img{
+        width: 40rem;
+    }
+
+    .service{
+        margin-left: 0;
+    }
+    .box_about_me{
+        margin-left: 12rem;
+    }
+
+    .prject_area{
+        column-gap: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .home_section{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0;
+    }
+
+    .btn{
+        right: 3rem;
+    }
+    .icons{
+        left: 9.5rem;
+    }
+
+    .home_box{
+        width: 100%;
+        margin-left: 15rem;
+        
+    }
+
+    .home_box h1{
+        font-size: 3rem;
+    }
+
+    .home_box span{
+        font-size: 2rem;
+    }
+    .profile{
+        bottom: 0;
+    }
+
+    .profile img{
+        width: 28rem;
+    }
+
+    .about_section{
+        width: 100%;
+
+    }
+    .box_about_me{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .second_profile{
+        position: absolute;
+        left: 25%;
+        opacity: .5;
+    }
+
+    .text_area{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service{
+        column-gap: 1rem;
+        margin-left: -15rem;
+    }
+
+    .vertical{
+        transform: rotate(0deg);
+        left: 32rem;
+        bottom: 12rem;
+    }
+
+    .frontend_box, .backend_box{
+        width: 25rem;
+    }
+
+    .project_section{
+
+        width: 100%;
+    }
+    .prject_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .img_area img{
+        width: 40rem;
+    }
+
+    .contact_section{
+        width: 100%;
+    }
+    .contact_section h1{
+        left: 25%;
+    }
+    .btns{
+        width: 19rem;
+        height: 5rem;
+    }
+    
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 80%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem 2%;
+    }  
+    .header ul li{
+        padding: 0 10px;
+    }
+
+    .home_box{
+        margin-left:5rem ;
+    }
+
+    .icons{
+        margin-left: 1em;
+    }
+    .home_box h1{
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .second_profile{
+        left: 0;
+    }
+
+    .btn{
+        width: 100%;
+    }
+    .text_area{
+        top: 5rem;
+    }
+    .text_area h1{
+        width: 13rem;
+    }
+    .service{
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 2rem;
+        row-gap: 2rem;
+    }
+    .vertical{
+        left: 2rem;
+        bottom: 1rem;
+    }
+    .skills_backend{
+        top: 0;
+    }
+
+    .skills .progress, .skills_backend .progress_backend{
+        margin-bottom: 4px;
+    }
+    .prject_area{
+        margin-right: 0;
+    }
+    .description p{
+        width: 380px;
+        font-size: 1rem;
+        margin-left: 13rem;
+    }
+    .description ol{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 17rem;
+    }
+    .img_area img{
+        width: 28rem;
+    }
+
+    .contact_section h1{
+        font-size: 3rem;
+        left: 15%;
+    }
+
+    .btns{
+        margin: 3rem;
+    }
+}
+
+/* @media screen and (max-width:1999px) and (min-width:1024px){
+
+    .service{
+        margin-left: -3rem;
+    }
+    .box_about_me{
+        margin-left: 12rem;
+    }
+    .prject_area{
+        column-gap: 1rem;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .img_area img{
+        width: 40rem;
+    }
+
+    .home_section{
+        gap: 15rem;
+    }
+
+    .profile img{
+        width: 30rem;
+    }
+} */
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen  and (min-width : 1224px) {
+/* @media only screen  and (min-width : 1224px) {
     section{
         padding: 10rem 25% 10rem;
     }    
@@ -682,11 +940,11 @@ form .textarea_field textarea{
 
 
     .title{
-        left: 25rem;
+        left: 18rem;
     }
 
     .btns{
-        left: 25rem;
+        left: 18rem;
     }
 
 
@@ -826,7 +1084,7 @@ form .textarea_field textarea{
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
     section{
         padding: 10rem 20% 10rem;
@@ -980,18 +1238,22 @@ form .textarea_field textarea{
     .img_area img{
         width: 25rem;
     }
+    .contact_body{
+        padding: 5rem 4% 1rem;
+        
+    }
 
     .title{
         font-size: 1.5rem;
-        left: 8rem;
+        left: 9rem;
+        margin-left: -2rem;
     }
     .btns{
         left: 2rem;
+        margin-left: 6rem;
     }
 
-    .contact_body{
-        padding: 5rem 4% 1rem;
-    }
+
  
     .footer_box{
         width: 20rem;
@@ -1027,4 +1289,4 @@ form .textarea_field textarea{
         padding: 0 10px;
     }
 
-}
+} */ */
